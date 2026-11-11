@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laser Controller Validation</title><link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header><div><strong id="output">LASER OUTPUT STATE IS UNKNOWN</strong><small id="connection">DISCONNECTED</small></div><button id="stop" class="stop" data-i18n="stop">REQUEST LASER STOP</button></header>
+  <main>
+    <section class="title"><h1 data-i18n="title">CLEANING LASER CONTROLLER</h1><p id="message">LOCAL CONTROLLER READY</p></section>
+    <nav aria-label="Controller sections"><button data-tab="status" data-i18n="status">STATUS</button><button data-tab="config" data-i18n="config">CONFIG</button><button data-tab="audit" data-i18n="audit">AUDIT</button><button data-tab="settings" data-i18n="settings">SETTINGS</button></nav>
+    <section id="status" class="tab"><h2 data-i18n="connection">Connection</h2><button id="scan" data-i18n="scan">SCAN FOR BWT LASER</button><div id="candidates"></div><dl id="status-list"></dl></section>
+    <section id="config" class="tab" hidden><h2 data-i18n="configuration">Laser configuration</h2><p data-i18n="reviewHint">Changes remain pending until you review and apply them.</p><label><span data-i18n="power">Power (%)</span><input id="output_percent" type="number" min="0" max="100" step="1"></label><label><span data-i18n="frequency">PWM frequency (Hz)</span><input id="pwm_frequency_hz" type="number" min="1" max="5000" step="1"></label><label><span data-i18n="duty">Duty cycle (%)</span><input id="duty_cycle_percent" type="number" min="1" max="99" step="1"></label><label><input id="experimental" type="checkbox"> <span data-i18n="experimental">Enable experimental live tuning</span></label><button id="review" data-i18n="review">REVIEW AND APPLY</button><dialog id="review-dialog"><h2 data-i18n="review">Review parameter changes</h2><pre id="review-values"></pre><button id="apply" data-i18n="apply">APPLY PARAMETERS</button><button id="cancel" data-i18n="cancel">CANCEL</button></dialog></section>
+    <section id="audit" class="tab" hidden><h2 data-i18n="sessionAudit">Session audit</h2><button id="export" data-i18n="export">EXPORT ACTIVE AUDIT SESSION</button><label><span data-i18n="observation">Operator observation</span><textarea id="observation" rows="4"></textarea></label><button id="record" data-i18n="record">RECORD OBSERVATION</button><pre id="audit-log" aria-live="polite"></pre></section>
+    <section id="settings" class="tab" hidden><h2 data-i18n="settings">Settings</h2><fieldset><legend data-i18n="language">Language</legend><button data-language="en">English</button><button data-language="es">Español</button><button data-language="zh-CN">中文</button><button data-language="fr">Français</button></fieldset><fieldset><legend data-i18n="display">Display</legend><label><input id="large-text" type="checkbox"> <span data-i18n="largeText">Large text</span></label><label><input id="contrast" type="checkbox"> <span data-i18n="contrast">High contrast</span></label><label><input id="motion" type="checkbox"> <span data-i18n="motion">Reduced motion</span></label></fieldset></section>
+  </main><script src="app.js"></script>
+</body></html>

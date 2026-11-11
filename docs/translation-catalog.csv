@@ -1,0 +1,25 @@
+Original text,Detected language,Literal English translation,Recommended operator text,Approved terminology,STE mode,Screen,Control type,Immediate effect,Safety relevance,Notes
+进入,Chinese,Enter,OPEN APP,app,strict,Guide,Button,Opens the main app,None,Resource go_home
+跳过,Chinese,Skip,SKIP GUIDE,app,strict,Guide,Button,Skips the guide,None,Resource skip
+正在连接激光器……,Chinese,Connecting to laser…,The app connects to the laser system.,app; laser system,strict,Device list,Progress message,Starts connection,High,Does not imply verified identity
+激光器已连接，请不要重复连接！,Chinese,The laser is connected. Do not connect again.,The Bluetooth connection exists. Do not request another connection.,Bluetooth connection,strict,Device list,Dialog,Blocks duplicate connection,Medium,Connection does not prove safe state
+激光器连接成功,Chinese,Laser connection succeeded,The Bluetooth connection exists.,Bluetooth connection,strict,Device list,Toast,Reports transport result,High,Do not call the laser system safe
+激光器连接失败,Chinese,Laser connection failed,The Bluetooth connection failed. Do not arm the laser.,Bluetooth connection; laser,strict,Device list,Fault message,Reports connection failure,High,Operator action requires hardware review
+正在查找激光器……,Chinese,Searching for laser…,The app searches for a laser system.,app; laser system,strict,Device list,Progress message,Starts BLE scan,Low,Device-name filter contains BWT
+蓝牙已断开,Chinese,Bluetooth disconnected,BLUETOOTH DISCONNECTED,Bluetooth connection,strict,Device list,Status,Reports disconnection,High,Output state must also become unknown
+开启使能,Chinese,Turn on enable,ARM LASER,laser armed,strict,Settings,Button,Original sends WEN Y,Critical,Original interface treats result as emission
+关闭使能,Chinese,Turn off enable,REQUEST LASER STOP,stop request,strict,Settings,Button,Original sends WEN N,Critical,Do not call result stopped without status
+请输入结果,Chinese,Enter the result,Complete the arming check.,laser armed,strict,Settings,Prompt,Original arithmetic prompt,Critical,Replacement uses a timed hold and summary
+确定,Chinese,Confirm,REQUEST LASER EMISSION,laser output,strict,Settings,Dialog button,Original can send WEN Y,Critical,Generic label is prohibited
+取消,Chinese,Cancel,CANCEL,app,strict,Settings,Dialog button,Cancels prompt,High,No command permitted
+出光失败！,Chinese,Laser emission failed,The app did not confirm laser output. The laser output state is unknown.,laser output,strict,Settings,Fault message,Reports an unconfirmed result,Critical,Required action needs hardware review
+出光成功！,Chinese,Laser emission succeeded,LASER OUTPUT IS ON,laser output,strict,Settings,Status,Claims emission,Critical,Use only after verified device status
+关光失败！,Chinese,Laser stop failed,STOP NOT CONFIRMED,stop request,strict,Settings,Fault message,Reports an unconfirmed stop,Critical,Show emergency-stop instruction
+关光成功！,Chinese,Laser stop succeeded,STOP CONFIRMED,stop request,strict,Settings,Status,Claims stop,Critical,Use only after verified output-off status
+出光以后请时刻关注手机状态！,Chinese,Watch the phone status after emission,The laser output is on. Monitor the laser system. Keep the physical emergency stop accessible.,laser output; laser system; physical emergency stop,strict,Settings,Warning,Warns after output request,Critical,Qualified reviewer must approve action
+激光器未连接！,Chinese,Laser not connected,BLUETOOTH DISCONNECTED,Bluetooth connection,strict,Settings,Fault message,Blocks a command,High,Output state must remain unknown
+设置功率百分比范围应为0(含)到105(含)之间,Chinese,Power percentage must be from 0 through 105,Enter an output setting from 0 through 105 percent.,configured parameter,strict,Settings,Validation message,Blocks invalid value,High,Hardware range is not confirmed
+指令不能为空！,Chinese,Command cannot be empty,No command is available.,app,strict,Settings,Validation message,Blocks empty free command,Critical,Replacement removes free commands
+收到未能识别的指令,Chinese,Received an unrecognized command,The app received an unknown command. The app rejected the command. Do not arm the laser.,fault; app,strict,Remote service,Fault message,Original reports unknown remote input,Critical,Replacement has no remote service
+与设备的蓝牙连接断开,Chinese,Bluetooth connection to device disconnected,The Bluetooth connection is lost. The laser output state is unknown. Use the physical emergency stop.,Bluetooth connection; laser output; physical emergency stop,strict,Global,Fault message,Reports connection loss,Critical,Add prohibited reconnect action after hardware review
+

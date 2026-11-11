@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Laser Controller Validation</string>
+    <string name="bluetooth_disconnected">BLUETOOTH DISCONNECTED</string>
+    <string name="device_identity_not_verified">DEVICE IDENTITY NOT VERIFIED</string>
+    <string name="laser_output_unknown">LASER OUTPUT STATE IS UNKNOWN</string>
+    <string name="interlock_unknown">INTERLOCK STATE IS UNKNOWN</string>
+    <string name="cooling_unknown">COOLING SYSTEM STATE IS UNKNOWN</string>
+    <string name="parameters_pending">PARAMETERS PENDING</string>
+    <string name="parameters_applied">PARAMETERS APPLIED</string>
+    <string name="request_stop">REQUEST LASER STOP</string>
+    <string name="arm_laser">ARM LASER</string>
+    <string name="request_emission">REQUEST LASER EMISSION</string>
+    <string name="review_changes">REVIEW CHANGES</string>
+    <string name="apply_parameters">APPLY PARAMETERS</string>
+    <string name="cancel">CANCEL</string>
+    <string name="stop_not_confirmed">STOP NOT CONFIRMED. LASER OUTPUT STATE IS UNKNOWN.</string>
+    <string name="connection_lost_fault">BLUETOOTH CONNECTION LOST. LASER OUTPUT STATE IS UNKNOWN.</string>
+</resources>

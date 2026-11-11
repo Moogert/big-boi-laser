@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Validación del controlador láser</string>
+    <string name="bluetooth_disconnected">BLUETOOTH DESCONECTADO</string>
+    <string name="device_identity_not_verified">IDENTIDAD DEL DISPOSITIVO NO VERIFICADA</string>
+    <string name="laser_output_unknown">ESTADO DE SALIDA DEL LÁSER DESCONOCIDO</string>
+    <string name="interlock_unknown">ESTADO DEL INTERBLOQUEO DESCONOCIDO</string>
+    <string name="cooling_unknown">ESTADO DE REFRIGERACIÓN DESCONOCIDO</string>
+    <string name="parameters_pending">PARÁMETROS PENDIENTES</string>
+    <string name="parameters_applied">PARÁMETROS APLICADOS</string>
+    <string name="request_stop">SOLICITAR PARADA DEL LÁSER</string>
+    <string name="arm_laser">ARMAR LÁSER</string>
+    <string name="request_emission">SOLICITAR EMISIÓN LÁSER</string>
+    <string name="review_changes">REVISAR CAMBIOS</string>
+    <string name="apply_parameters">APLICAR PARÁMETROS</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="stop_not_confirmed">PARADA NO CONFIRMADA. EL ESTADO DE SALIDA DEL LÁSER ES DESCONOCIDO.</string>
+    <string name="connection_lost_fault">CONEXIÓN BLUETOOTH PERDIDA. EL ESTADO DE SALIDA DEL LÁSER ES DESCONOCIDO.</string>
+</resources>

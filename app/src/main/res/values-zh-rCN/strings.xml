@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">激光控制器验证</string>
+    <string name="bluetooth_disconnected">蓝牙未连接</string>
+    <string name="device_identity_not_verified">设备身份未验证</string>
+    <string name="laser_output_unknown">激光输出状态未知</string>
+    <string name="interlock_unknown">联锁状态未知</string>
+    <string name="cooling_unknown">冷却系统状态未知</string>
+    <string name="parameters_pending">参数待应用</string>
+    <string name="parameters_applied">参数已应用</string>
+    <string name="request_stop">请求停止激光</string>
+    <string name="arm_laser">激光准备</string>
+    <string name="request_emission">请求激光输出</string>
+    <string name="review_changes">检查更改</string>
+    <string name="apply_parameters">应用参数</string>
+    <string name="cancel">取消</string>
+    <string name="stop_not_confirmed">停止未确认。激光输出状态未知。</string>
+    <string name="connection_lost_fault">蓝牙连接丢失。激光输出状态未知。</string>
+</resources>
